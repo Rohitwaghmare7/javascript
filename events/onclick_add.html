@@ -1,0 +1,16 @@
+<script>
+	function multiply() {
+		var a = document.getElementById("a").value;
+		var b = document.getElementById("b").value;
+		var res = a * b;
+		document.getElementById("Res").value = a + "*" + b + " = " + res;
+	}
+</script>
+<form>
+	Enter two number for multiplication
+	<br>
+	<input id="a" autofocus />
+	<input id="b" />
+	<input id="Res" />
+	<input type="button" value="Multiply" onClick="multiply()">
+</form>

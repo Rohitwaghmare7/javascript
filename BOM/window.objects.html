@@ -1,0 +1,12 @@
+<script>
+    function openWin() {
+        myWindow = window.open(",", 'width=200 , height=100');
+        myWindow.document.write("<p>This is myWindow</p>");
+        myWindow.focus();
+        myWindow.opener.document.write("<p>This is source window...!</p>");
+    }
+</script>
+
+<body>
+    <input type="button" value="Open my window" onClick="openWin()">
+</body>

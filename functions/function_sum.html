@@ -1,0 +1,16 @@
+<button onclick="addition(10,20,30,40,50)">Click me to show addition</button>
+<p id="add"></p>
+
+<script>
+    function addition() {
+        //document.write(arguments.length + "<br>");
+        var i, add = 0;
+        for (i = 0; i < arguments.length; i++) {
+            //add += arguments[i];
+            add = add + arguments[i];
+        }
+        //return add;
+        document.getElementById('add').innerHTML = add;
+        //document.write(add);
+    }
+</script>

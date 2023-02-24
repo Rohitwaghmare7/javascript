@@ -1,0 +1,14 @@
+<p id="demo"></p>
+
+<script>
+    var greeting;
+    var time = new Date().getHours();
+    if (time < 10) {
+        greeting = "Good Morning";
+    } else if (time > 15 && time < 18) {
+        greeting = "Good Evening";
+    } else {
+        greeting = "Good Night";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+</script>

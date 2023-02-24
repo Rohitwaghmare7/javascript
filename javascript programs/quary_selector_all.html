@@ -1,0 +1,9 @@
+<p>Finding HTML Elements by Query Selector</p>
+<p class="Intro">Hello World!!</p>
+<p class="Intro">This Example demonstrates the <b>querySelectorAll</b>method.</p>
+
+<p id="demo"></p>
+<script>
+    const x = document.querySelectorAll("p.Intro");
+    document.getElementById("demo").innerHTML = 'The first paragraph (index 0) with class="Intro" is : '+x[1].innerHTML;
+</script>

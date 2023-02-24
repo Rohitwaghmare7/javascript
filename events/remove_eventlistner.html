@@ -1,0 +1,16 @@
+<p id="myDIV">
+    <button onclick="removeHandler()" id="myBtn">Remove</button>
+</p>
+<p id="demo"></p>
+
+<script>
+    document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = Math.floor(Math.random() * 10);
+    }
+
+    function removeHandler() {
+        document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+    }
+</script>

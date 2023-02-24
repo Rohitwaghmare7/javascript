@@ -1,0 +1,10 @@
+<script>
+	function openWin() {
+		myWindow = window.open("object_location.html");
+		myWindow.document.write("<p>This is my Window</p>");
+		myWindow.alert("<p>This is my Window</p>");
+		myWindow.focus();
+		myWindow.opener.document.write("<p>This is source window</p>");
+	}
+</script>
+<input type="button" onClick="openWin()" value="Click Here">

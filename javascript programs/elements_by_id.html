@@ -1,0 +1,10 @@
+<p id="i">Finding HTML elements by id</p>
+<p>Thin example demo the<b>Method</b></p>
+
+<p id="demo"></p>
+
+<script>
+    const elements = document.getElementById("intro");
+
+    document.getElementById("demo").innerHTML="the text form the intro paragraph is !" + elements.innerHTML;
+</script>

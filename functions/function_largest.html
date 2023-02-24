@@ -1,0 +1,28 @@
+<p>Finding the largest number</p>
+<p id="demo">
+
+</p>
+
+<script>
+    function findMax() {
+        var i, maxx = 0;
+        for (i = 0; i < arguments.length; i++) { 
+            if (arguments[i] > maxx) {
+                maxx = arguments[i];
+            }
+        }
+        return maxx;
+    }
+    document.getElementById("demo").innerHTML = findMax(6, 40, 5, 10, 25, 15);
+</script>
+<!-- 
+
+i         arguments[i]   maxx
+0           6            6
+1           4            6
+2           5            6
+3           10           10
+4           25           25
+5           15           25 
+
+-->

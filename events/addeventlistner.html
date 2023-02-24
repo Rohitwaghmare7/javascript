@@ -1,0 +1,18 @@
+<button id="btn">Click Me</button>
+
+<script>
+    var element = document.getElementById("btn");
+    element.addEventListener("click", function txtChange() {
+        element.innerHTML = "Button has been clicked";
+    });
+
+    element.addEventListener("mouseover", alertt);
+
+    element.addEventListener("mouseout", function txtChange() {
+        element.innerHTML = "Button text has changed";
+    });
+
+    function alertt() {
+        alert("mouse over event fired.");
+    }
+</script>

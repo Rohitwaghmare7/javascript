@@ -1,0 +1,14 @@
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango", "Pinapple", "Grapes"];
+    document.getElementById("demo1").innerHTML = "Original Array:<br>" + fruits;
+
+    function myFunction() {
+        fruits.splice(2, 3, "Lemon", "Kiwi", "Dragon fruit");
+        document.getElementById("demo2").innerHTML = "New Array:<br>" + fruits;
+    }
+</script>

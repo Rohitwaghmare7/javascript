@@ -1,0 +1,28 @@
+<p id="demo"></p>
+
+<script>
+	var person = {
+		firstName: "John",
+		lastName : "Doe",
+		language : "en",
+		get lang() {
+			return this.language;
+		}
+	};
+	document.getElementById("demo").innerHTML = person.lang;
+</script>
+
+<p id="demo"></p>
+
+<script>
+	var person = {
+		firstName: "John",
+		lastName : "Doe",
+		language : "NO",
+		set lang(value) {
+			this.language = value;
+		}
+	};
+	person.lang = "en";
+	document.getElementById("demo").innerHTML = person.language;
+</script>

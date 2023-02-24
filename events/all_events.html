@@ -1,0 +1,29 @@
+<body>
+    <!-- onblur="addition(10,20,30,40,50)" -->
+    <!-- onload="addition(10,20,30,40,50)" -->
+
+    <input onkeydown="addition(10,20,30,40,50)" autofocus>
+
+    <input onkeyup="addition(10,20,30,40,50)">
+
+    <select onchange="addition(10,20,30,40,50)">
+		<option>1</option>
+		<option>2</option>
+		<option>2</option>
+		<option>2</option>
+		<option>2</option>
+	</select>
+    <br><br><br><br>
+    <button onmouseover="addition(10,20,30,40,50)">Click me for addition</button>
+
+    <script>
+        function addition() {
+            var i, add = 0;
+            for (i = 0; i < arguments.length; i++) {
+                //add += arguments[i];
+                add = add + arguments[i];
+            }
+            document.write(add);
+        }
+    </script>
+</body>
